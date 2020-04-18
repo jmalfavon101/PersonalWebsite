@@ -1,0 +1,211 @@
+html, body {
+    font-family: acumin-pro, sans-serif;
+}
+
+header {
+    padding: 300px 0;
+    background-color: black;
+    background-image: url("img/Suit3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-style: normal;
+}
+
+header h1 {
+    font-size: 80px;
+    color: whitesmoke;
+}
+
+header p {
+    font-size: 40px;
+    font-style: normal;
+    color: whitesmoke;
+}
+
+
+.about {
+    padding: 2rem;
+}
+
+.about-section {
+    text-align: left;
+    padding: 1rem;
+}
+
+.about-section ul .fa-arrow-right {
+    margin-right: 0.5rem;
+}
+
+.about-section ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.about h1 {
+    text-align: left;
+    color: #198591;
+}
+
+.section3 {
+    background-color: black;
+    background-image: url("img/geometric\ background.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover cover;
+    margin-left: 0px 0px;
+}
+
+.circular--square {
+    border-radius: 50%;
+}
+
+.section3 img{
+    margin: 20px 20px;
+    padding-bottom: 20px;
+}
+
+@media (min-width:768px) {
+    .section3 img {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .section3 img {
+        margin-bottom: 0;
+    }
+}
+
+.section4 {
+    color: #198591;
+    padding: 25px;
+    font-style: normal;
+    text-align: center;
+    font-size: 75px;
+}
+
+.section5 {
+    font-style: normal;
+}
+
+.section5 h1 {
+    text-align: center;
+    color: #198591;
+}
+
+.section5 h2 {
+    text-align: center;
+}
+
+.section5 h3 {
+    text-align: center;
+}
+
+.section5 h4 {
+    text-align: center;
+}
+
+.section5 h5 {
+    text-align: center;
+}
+
+.bar {
+    width: 100%;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem; /* default font size: 16px. then 1rem = 16px; */
+}
+
+.skills {
+    text-align: right;
+    padding: .5rem;
+    color: white;
+}
+
+
+
+.Linkedin {width: 100%; background-color: #198591;}
+.Bullhorn {width: 80%; background-color: #198591;}
+.Office {width: 80%; background-color: #198591;}
+
+
+
+.nav-item {
+    margin: 10px 16px;
+}
+
+.navbar-brand img {
+    height: 46px;
+    margin-right: 8px;
+    width: 46px;
+}
+
+#liprofile{
+    padding: .25rem;
+}
+
+.footer {
+    margin: 3px;
+}
+
+.resume ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resume ul .fa {
+    margin-right: .5rem;
+}
+
+.resume, .about {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.resume-section:not(:first-child) {
+    border-left: 1px solid #198591;
+}
+
+.resume-section, .about-section {
+    width: 33.33%;
+}
+
+.resume-section {
+    padding: 1.5rem;
+}
+
+@media (min-width: 768px) /* tablet and above */
+{
+    .row-relative {position: relative;}
+
+    .padding-column-1 {padding-right: 15px;}
+    
+    .col-border
+    {
+        padding-left: 0;
+        position: static;
+    }
+
+   .col-border::before
+   {
+        content:"";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border-left: 1px solid #198591;
+   } 
+}
+
+@media (max-width: 768px) { /* tablet and phone */
+    .resume, .about {
+        flex-direction: column;
+    }
+    
+    .resume-section, .about-section {
+        width: 100%;
+        padding: 2rem;
+    }
+}
